@@ -143,3 +143,14 @@ Answer:
 20. Why must the Checkout step come before the Trivy scan?
 
 Answer: Because Trivy needs access to the repository files. Without checking out the code first, there are no files available to scan.
+
+
+Question: What is the purpose of Trivy?
+Answer:
+Trivy is an open-source security scanner used to identify security issues in applications and their components.
+Its main purposes are:
+Detect vulnerabilities (CVEs)
+Find security misconfigurations
+Detect secrets (API keys, passwords, tokens)
+Scan project dependencies
+In this workflow: Trivy scans the project's filesystem (source code and project files) to identify security vulnerabilities and generate a security report.
